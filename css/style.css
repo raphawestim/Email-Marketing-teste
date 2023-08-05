@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+  --font-family: 'Roboto', sans-serif;
+  --primary-color: #007daf;
+  --secundary-color: #C5DFF8;
+  --Tertiary-color: #4A55A2;
+  --backing-color: #A0BFE0;
+  --backing-color-light: #C5DFF8;
+  --color-white: #fff;
+  --color-black: #000;
+
+}
+
+body{
+  min-height: 100vh;
+  background: rgb(197,223,248);
+  background: linear-gradient(90deg, rgba(197,223,248,1) 0%, rgba(255,255,255,1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+.bloco{
+  background-color: var(--color-white);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  margin: 20px;
+}
+
+.marketing-info{
+  padding: 20px; 
+}
+
+.banner-principal{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, rgba(0,125,175,1) 0%, rgba(197,223,248,1) 100%);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    position: relative;
+}
+
+.scrum{
+  width: 30%;
+  padding: 20px;
+}
+
+.titulo-principal{
+  font-size: 1.5em;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.titulo-principal::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-color);
+  top: 85%;
+}
+
+.scrumMaster::after{
+  content: '';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; /* Peso da fonte do ícone */
+  font-size: 20px; /* Tamanho do ícone */
+  position: absolute;
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  padding: 10px;
+  top: 80%;
+  right: 3%;
+}
+
+.scrumMaster::after{
+  content: '\f005'; /* Código do ícone de estrela sólida */
+  color: var(--color-white);
+}
+
+.subtitulo{
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.banner{
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.banner-intro{
+  background-color: var(--backing-color);
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+.logo{
+  width: 165px;
+  height: 91px;
+  margin-bottom: 20px;
+}
+
+.titulo-banner{
+  font-size: 2em;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.texto-banner{
+  font-size: 1em;
+  font-weight: 300;
+  color: var(--color-black);
+  margin: 0;
+  text-align: center;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+.info-marketing{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+h3{
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5em;
+  color: var(--primary-color);
+}
+
+.banner-intro{
+  /* background-color: var(--primary-color); */
+  background: rgb(0,125,175);
+  background: linear-gradient(90deg, rgba(0,125,175,1) 0%, rgba(197,223,248,1) 100%);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  
+}
+
+.banner-intro::before{
+  content: '';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; /* Peso da fonte do ícone */
+  font-size: 20px; /* Tamanho do ícone */
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  padding: 10px;
+  top: -24px;
+}
+
+.banner-intro::before {
+  content: '\f508'; /* Código do ícone de estrela sólida */
+  color: var(--color-white);
+}
+
+.texto-marketing{
+  color: var(--color-white);
+}
+
+.btn{
+  background-color: var(--color-white);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+  background-color: var(--color-white);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.icon{
+  background-color: var(--color-white);
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.icon-background{
+  border-radius: 50%;
+  padding: 10px;
+  background-color: var(--backing-color-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-scrum{
+  width: 45%;
+  width: 45%;
+  background-color: var(--backing-color-light);
+  border-radius: 50%;
+  padding: 20px;
+
+  /* border-radius: 73px;
+  padding: 35px; */
+}
+
+.banner-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.banner-right{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.texto-final{
+  font-size: 1.2em;
+  font-weight: 300;
+  color: var(--color-black);
+  margin: 0;
+  text-align: center;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.scrumMaster {
+  background-color: var(--color-white);
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.scrumMaster::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  left: -10px; /* Ajuste a posição horizontal conforme necessário */
+  top: -10px; /* Ajuste a posição vertical conforme necessário */
+  z-index: -1;
+}
+
+.cliqueAqui{
+  color: var(--primary-color);
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+hr{
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  margin: 20px 0;
+}
+
+@media (max-width: 900px){
+
+  .banner-principal{
+    flex-direction: column;
+    padding: 20px;
+
+  }
+  .scrumMaster{
+    margin-top: 20px;
+  }
+
+  .titulo-principal::before{
+    display: none;
+  }
+
+  .scrum{
+    width: 50%;
+  }
+  .banner-intro{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .banner-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
